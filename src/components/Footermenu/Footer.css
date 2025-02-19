@@ -1,0 +1,26 @@
+.footer{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-top: auto; 
+    padding: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+}
+.footer div span{
+    font-weight: 700;
+    font-size: 12px;
+    color:#4FD1C5;
+}
+
+
+nav a {
+    all: unset; 
+    margin: 0 10px;
+    cursor: pointer; 
+}
