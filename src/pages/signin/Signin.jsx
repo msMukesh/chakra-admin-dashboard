@@ -1,5 +1,5 @@
 import React from "react";
-import "./signin.css";
+import "./Signin.css";
 import { Link } from "react-router-dom";
 import Togglebutton from "../../components/togglebutton/togglebutton";
 import bgimage from "../../assets/images/signinbg.png";
