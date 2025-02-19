@@ -1,6 +1,6 @@
 import React from 'react'
-import Signup from "./components/signup/Signup.jsx"
-import Signin from "./components/signin/Signin.jsx"
+import Signup from "./pages/signup/Signup.jsx"
+import Signin from "./pages/signin/Signin.jsx"
 import Footer from "./components/footermenu/Footer.jsx"
 import Navbar from "./components/navbar/Navbar.jsx"
 import "./App.css";
@@ -21,9 +21,9 @@ function App() {
           </Routes>
         </div>
         <div className='footerplace'>
-        <Footer />
+          <Footer />
         </div>
-       
+
       </BrowserRouter>
     </div>
   );

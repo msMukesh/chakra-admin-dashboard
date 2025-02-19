@@ -15,25 +15,29 @@ html, body {
 
 /* Content area grows to push footer down */
 .main-content {
-    display:block;
+    /* display:block; */
     flex: 1;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers everything vertically */
   
+    padding-bottom: 60px; /* Prevents content from touching footer */
+    overflow: auto; /* Allows content overflow to be handled */
+    width: 100%;
 }
-/* .routes-style {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} */
 
-.footerplace{
+
+.footerplace {
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
+    position: relative;
+}
+
+
+
+
+/* .footerplace{
 display: block;
 margin-top: 60px;
-}
-.footerplace-signin{
-    margin-top:10px;
-}
+} */

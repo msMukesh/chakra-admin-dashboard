@@ -5,7 +5,7 @@ import Rectangle from "./Rectangle";
 import apple from '../../assets/icons/apple.png';
 import facebook from '../../assets/icons/facebook.png';
 import google from '../../assets/icons/google.png';
-import Togglebutton from "../togglebutton/togglebutton";
+import Togglebutton from "../../components/togglebutton/togglebutton";
 // import Footer from "../footermenu/Footer.jsx"
 
 function Signup() {
