@@ -1,7 +1,7 @@
 import React from "react";
 import "./Signin.css";
 import { Link } from "react-router-dom";
-import Togglebutton from "../../components/togglebutton/togglebutton";
+import Togglebutton from "../../components/togglebutton/Togglebutton.jsx";
 import bgimage from "../../assets/images/signinbg.png";
 // import Footer from "../footermenu/Footer.jsx"
 
