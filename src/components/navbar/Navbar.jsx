@@ -11,6 +11,7 @@ import profileblue from "../../assets/icons/profile-blue.svg";
 import signupblue from "../../assets/icons/signup-blue.svg";
 import signinblue from "../../assets/icons/signin-blue.svg";
 import creativetimlogoblue from "../../assets/icons/logo-creative-tim-black-blue.svg";
+import { Link } from "react-router-dom";
 
 
 function Navbar() {
@@ -26,7 +27,9 @@ function Navbar() {
             <ul className='nav-list'>
                     <li className="nav-item">
                     <img  className="nav-icon" src={isSigninPage ? dashboardblue : dashboardlogo} alt="dashboard" />
-                    <span>DASHBOARD</span>
+                    <span><Link to="/dashboardscreen" className="dashboardlink">DASHBOARD</Link>
+                    </span>
+
                     </li>
                     <li className="nav-item">
                     <img className="nav-icon" src={isSigninPage ? profileblue : profilelogo} alt="profile" />

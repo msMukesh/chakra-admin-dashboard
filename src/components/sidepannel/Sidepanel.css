@@ -1,0 +1,143 @@
+.sidepanel-container {
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px;
+    height: 100%; /* Inherit height from parent */
+    width: 250px;
+    position: relative; /* Keeps it inside dashboard */
+    left: 0;
+    overflow-y: auto; /* Allows scrolling */
+}
+
+.nav-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    color:#2D3748 ;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.nav-name img{
+    width: 22px;
+    height: 22px;
+}
+.custom-hr {
+    width: 80%; /* Makes it responsive inside sidepanel */
+    height: 1px;
+    border: none;
+
+    background: linear-gradient(to right, #E0E1E2 0%, #E0E1E2 15.63%, #E0E1E2 100%);
+    margin: 16px 0; /* Adds spacing */
+}
+.dashboard-home{
+    display: flex;
+    flex-direction: row;
+justify-content: flex-start;
+padding-left:16px ;
+padding-top: 12px;
+padding-bottom: 12px;
+align-items: center;
+
+background-color:#FFFFFF;
+width: 219px;
+height: 54px;
+border-radius: 15px;
+}
+
+.dashboard-home span{
+    margin-left:12px ;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+.menu{
+    /* background-color: aquamarine; */
+}
+
+.icon-conainer{
+    display: flex;
+    flex-direction: row;
+justify-content: flex-start;
+margin-top: 24px;
+align-items: center;
+padding-left:16px ;
+}
+
+.tables{
+    margin-top: 12px;
+}
+.names{
+    margin-left:12px ;
+   font-size: 12px;
+   font-weight: 700;
+   color:#A0AEC0;
+}
+.textaccpage{
+    color:#2D3748;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.needhelp-container{
+    background-image: url("../../assets/sidebar/needhelpbg.png");
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    width: 200px;
+    height: 151px;
+    border-radius: 15px;
+    margin-left: 12px;
+    margin-top:30px ;
+    padding: 16px;
+}
+
+.needhelp-text-container{
+    margin-top: 12px;
+    margin-bottom: 6px;
+    margin-left: 4px;
+}
+.needhelp-icon{
+    margin-left: 1px;
+    width:90px;
+}
+.needhelp-text1{
+color: #FFFFFF;
+font-size: 14px;
+font-weight: 700;
+line-height: 19.6px;
+}
+
+.needhelp-text2{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.custom-button {
+    width: 160px;
+    height: 35px;
+    background-color: #FFFFFF;
+   color: #2D3748;
+        font-weight: 700;
+        font-size: 10px;
+    border-radius: 15px; /* Slightly rounded corners */
+    cursor: pointer;
+    display: flex;
+    border:none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #f0f0f0;
+}

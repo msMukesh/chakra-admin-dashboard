@@ -1,0 +1,13 @@
+.dashboard-container {
+    /* background-color: rgb(146, 146, 211); */
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust height to fit within viewport */
+    width: 100%;
+    flex-grow: 1; /* Ensures it grows within available space */
+
+}
+
+.dashboard-content {
+    flex-grow: 1; /* Ensures it takes the remaining space */
+    padding: 20px;
+}
