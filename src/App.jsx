@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Signup from "./pages/signup/Signup.jsx";
 import Signin from "./pages/signin/Signin.jsx";
-import Footer from "./components/footermenu/Footer.jsx";
+import Footer from "./components/Footermenu/Footer.jsx"
 import Navbar from "./components/navbar/Navbar.jsx";
 import Error from "./pages/Error.jsx";
 import Dashboardscreen from "./pages/dashboardScreen/Dashboardscreen.jsx";
