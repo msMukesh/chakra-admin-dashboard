@@ -7,7 +7,7 @@ import Navbar from "./components/navbar/Navbar.jsx";
 import Error from "./pages/Error.jsx";
 import Dashboardscreen from "./pages/dashboardScreen/Dashboardscreen.jsx";
 import "./App.css";
-
+//
 function App() {
   return (
     <div className="app-container">
