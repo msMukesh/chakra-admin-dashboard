@@ -15,7 +15,7 @@ import needhelpbg from "../../assets/sidebar/needhelpbg.png";
 function Sidepanel() {
   return (
     <div className='sidepanel-container'>
-        <div className='nav-name'>
+        <div className='nav-head'>
             <img src={creativetimlogoblue} alt="Logo" />
             <span>PURITY UI DASHBOARD</span>
         </div>

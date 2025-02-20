@@ -62,9 +62,8 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; /* Adds spacing between the form and footer */
-
-
   }
+
   .head{
     display: flex;
     flex-direction: column;
@@ -95,7 +94,7 @@ body {
     margin-top: 5px;
     padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 16px;
   }
   
@@ -113,7 +112,7 @@ body {
   }
   
   .signupBtn:hover {
-    background-color: #0056b3;
+    background-color: #32a89c;
   }
   
   /* Centering the login link */
