@@ -6,41 +6,31 @@ html, body {
     flex-direction: column;
 }
 
-/* Make sure the container takes full height */
+/* Main container to ensure full height */
 .app-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the content area stretches */
+    min-height: 100%;
+    gap:8px;
 }
 
 /* Content area grows to push footer down */
 .main-content {
-    /* display:block; */
-    flex: 1;
-    min-height: 90vh;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers everything vertically */
-    flex-grow: 1; /* Pushes the footer down */
-
-    padding-bottom: 18px; /* Prevents content from touching footer */
-    overflow: auto; /* Allows content overflow to be handled */
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
+    padding-bottom: 18px; /* Prevents content from touching the footer */
+    overflow: auto; /* Handles content overflow */
+    
 }
 
-
+/* Footer stays at the bottom */
 .footerplace {
-    /* width: 100%;
-    margin-top: auto; 
-    position: relative; */
-
-  
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px; /* Pushes the footer to the bottom only when needed */
 }
-
-
-
-
-/* .footerplace{
-display: block;
-margin-top: 60px;
-} */

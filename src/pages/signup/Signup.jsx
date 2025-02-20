@@ -11,7 +11,9 @@ import Togglebutton from "../../components/togglebutton/togglebutton";
 function Signup() {
   return (
   <>
+  <div className="signup-container">
     <div className="signup-bg"> 
+    </div>
     <div className="welcome">
       <h3>Welcome!</h3>
       <br/>
@@ -58,8 +60,8 @@ function Signup() {
       </div>
 
     </div>
+    
     </div>
-
     </>
   );
 }

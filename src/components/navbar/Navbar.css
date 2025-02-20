@@ -109,3 +109,8 @@
 .freeDownload:hover {
     background-color: #ddd;
 }
+
+.signinlink {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the parent element's text color */
+}

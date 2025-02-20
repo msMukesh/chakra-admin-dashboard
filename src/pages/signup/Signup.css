@@ -7,10 +7,18 @@
 body {
   font-family: "Helvetica", Arial, sans-serif;
   width: 100%;
-  height: 100vh;
-
+  height: 100%;
+  min-height: 100vh;
 }
 
+.signup-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Vertically centers content */
+  justify-content: center;  /* Horizontally centers content */
+  width: 100%;
+  height: 100%;
+}
   .signup-bg{
     width: 100%;
     height: 45vh;
@@ -19,15 +27,14 @@ body {
     background-position: center;
     background-repeat: no-repeat; 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;  
-    padding-bottom: 60px; /* Prevents footer overlap */
    }
 
    .welcome{
     position: absolute;
-    top: 26%;
+    top:100px;
     color:rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -52,17 +59,17 @@ body {
 
    }
 
-.addUser {
-    position: absolute;
-    top:54%;
+   .addUser {
+    display: block;
     min-width: 480px;
     max-width: 600px;
     background-color: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Adds spacing between the form and footer */
-  }
+    margin-top: -120px; /* Reserves space for other elements above */
+    margin-bottom: 18px; /* Spacing between the form and footer */
+}
 
   .head{
     display: flex;
