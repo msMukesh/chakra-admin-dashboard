@@ -10,7 +10,6 @@ import signinfolder from "../../assets/sidebar/signinfolder.svg";
 import rocket from "../../assets/sidebar/rocket.svg";
 import needhelp from "../../assets/sidebar/questionmark.svg";
 import Iconrec from "../iconRect/Iconrect.jsx";
-import needhelpbg from "../../assets/sidebar/needhelpbg.png";
 
 function Sidepanel() {
   return (
@@ -64,7 +63,7 @@ function Sidepanel() {
 
         <div className='needhelp-container'>
         <div className='needhelp-icon '>
-        <Iconrec imgsrc={needhelp} recbgcolor="#FFFFFF" imgheight="20px" imgwidth="20px" />
+        <Iconrec imgsrc={needhelp} recbgcolor="#FFFFFF" imgheight="20px" imgwidth="20px" containerheight="35px" containerwidth="35px"/>
         </div>
 
 <div className='needhelp-text-container'>

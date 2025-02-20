@@ -37,11 +37,11 @@ function Navbar() {
                     </li>
                     <li className="nav-item">
                     <img className="nav-icon" src={isSigninPage ? signupblue : signuplogo} alt="signup"/>
-                    <span>SIGN UP</span>
+                    <span><Link to="/" className='dashboardlink'>SIGN UP</Link></span>
                     </li>
                     <li className="nav-item">
                     <img className="nav-icon" src={isSigninPage ? signinblue : signinlogo} alt="signin"/>
-                    <span>SIGN IN</span>
+                    <span><Link to="/signin" className='dashboardlink'>SIGN IN</Link></span>
                     </li>
             </ul>
         </div>
