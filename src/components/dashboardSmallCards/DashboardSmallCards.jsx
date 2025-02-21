@@ -1,35 +1,44 @@
-import React from 'react'
-import wallet from '../../assets/icons/wallet.svg';
+import React from 'react';
 import Iconrec from "../../components/iconRect/Iconrect.jsx";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
-import "bootstrap/dist/js/bootstrap.bundle.min"; // Import Bootstrap JS (for components)
+
 import "./DashboardSmallCards.css";
 
-function DashboardSmallCards() {
-  return (
+function DashboardSmallCards({ iconsrc, iconname, value, progresspercentage }) {
+  // Ensure progresspercentage is a number
+  const progressValue = parseInt(progresspercentage, 10); 
 
+  return (
     <div className="cards-item">
       <div className='cards-icon-conainer '>
-        <Iconrec imgsrc={wallet} recbgcolor="#4FD1C5" imgheight="12px" imgwidth="12px" containerheight="30px" containerwidth="30px" />
-        <span className='names'>Users</span>
+        <Iconrec imgsrc={iconsrc} recbgcolor="#4FD1C5" imgheight="13px" imgwidth="13px" containerheight="30px" containerwidth="30px" />
+        <span className='names'>{iconname}</span>
       </div>
 
-      <p className="cards-item-num">32,984</p>
+      <p className="cards-item-num">{value}</p>
 
-      <div className="progress" style={{ width: "100%", height: "6px", marginTop: "-10px" }}>
+      <div className="progress" style={{ width: "100px", height: "4px", backgroundColor: "#E2E8F0", borderRadius: "3px" }}>
         <div
           className="progress-bar"
           role="progressbar"
-          aria-valuenow="70"
+          aria-valuenow={progressValue}
           aria-valuemin="0"
           aria-valuemax="100"
-          style={{ width: "70%", backgroundColor: '#4FD1C5' }}
+          style={{
+            width: `${progressValue}%`,  // Ensure valid percentage
+            height: "4px",
+            backgroundColor: '#4FD1C5',
+            borderRadius: "3px",
+            marginTop:"-2px",
+            marginLeft:"-2px",
+
+            transition: "width 0.5s ease-in-out" // Smooth animation
+          }}
         >
         </div>
       </div>
 
     </div>
-  )
+  );
 }
 
-export default DashboardSmallCards
+export default DashboardSmallCards;

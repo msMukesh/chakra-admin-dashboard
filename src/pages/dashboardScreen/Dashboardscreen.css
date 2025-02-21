@@ -71,6 +71,7 @@
     place-content: center;
     height: 100%;
     width: 100%;
+    position: relative;
 
 }
 
@@ -122,6 +123,8 @@
 .cardTwo {
     padding: 6px;
     border-radius: 15px;
+    position: relative;
+
 }
 
 .cardTwoBgImg {
@@ -169,64 +172,128 @@
 
 .analytics-cards-two {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping unless forced */
+    flex-wrap: nowrap;
+    /* Prevent wrapping unless forced */
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
-    gap: 16px; /* Optional spacing */
-    width: 100%; /* Ensure it takes full width */
+    /* background-color: antiquewhite; */
+    gap: 16px;
+    /* Optional spacing */
+    width: 100%;
+    /* Ensure it takes full width */
     padding: 4px;
 }
 
 .analytics-cards-two-cards {
-    height: 440px;
-    background-color:#FFFFFF;
-    min-width: 0; /* Allows shrinking properly */
+    height: 410px;
+    background-color: #FFFFFF;
+    min-width: 0;
+    /* Allows shrinking properly */
     border-radius: 15px;
     padding: 12px;
 }
 
 .firstCard {
-    flex: 0 1 45%; /* Grow = 0, Shrink = 1, Basis = 45% */
+    flex: 0 1 45%;
+    /* Grow = 0, Shrink = 1, Basis = 45% */
 }
 
 .secondCard {
-    flex: 0 1 55%; /* Grow = 0, Shrink = 1, Basis = 55% */
+    flex: 0 1 55%;
+    /* Grow = 0, Shrink = 1, Basis = 55% */
 }
 
 /* ✅ Enable wrapping only when the screen width is below 860px */
 @media (max-width: 860px) {
     .analytics-cards-two {
-        flex-wrap: wrap; /* Enable wrapping */
+        flex-wrap: wrap;
+        /* Enable wrapping */
     }
+
     .analytics-cards-two-cards {
-        flex-basis: 100%; /* Take full width when stacked */
+        flex-basis: 100%;
+        /* Take full width when stacked */
     }
 }
-.graph-container{
+
+.graph-container {
     display: block;
 }
 
-.graph-container div{
-padding:2px;
+.graph-container div {
+    padding: 2px;
 }
+
 .graph-graph {
     height: 200px;
-    width: 100%;  /* Adjust width if necessary */
+    width: 100%;
+    /* Adjust width if necessary */
     border-radius: 12px;
-    overflow: hidden; /* Prevents overflow */
+    overflow: hidden;
+    /* Prevents overflow */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.graph-text{
-     margin-top: 2px;
+.graph-head {
+    margin-left: 16px;
+    margin-bottom: 10px;
 }
-.graph-text p{
-    margin-top: 8px;
-}
-/* .graph-card{
-    background-color: #A0AEC0;
 
-} */
+.graph-text {
+    margin-top: 2px;
+}
+
+.graph-text p {
+    margin-top: 10px;
+}
+
+.graph-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4px;
+    margin-top: 20px;
+}
+
+.graph-head p:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2D3748;
+}
+
+.graph-head p:nth-of-type(2) {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A0AEC0
+}
+
+.graph-head p:nth-of-type(2) span {
+    color: rgb(0, 192, 74);
+}
+
+.secondCard {
+    padding-top: 26px;
+}
+
+.readmore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #2D3748;
+}
+
+.readmore img {
+    margin-left: 4px;
+    height: 12px;
+    width: 12px;
+    color: #2D3748;
+}

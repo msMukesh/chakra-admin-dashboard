@@ -7,6 +7,10 @@ import analytics_statistics from '../../data/dashboardAnalyticsStat.js';
 import chakraimg from "../../assets/images/chakra-image.png";
 import CustomBarChart from '../../components/customChart/CustomBarChart.jsx';
 import SalesChart from '../../components/customChart/SalesChart.jsx';
+import DashboardSmallCards from '../../components/dashboardSmallCards/DashboardSmallCards.jsx';
+import small_cards_data from '../../data/smallCardsData.js';
+import arrowicon from "../../assets/icons/arrow.svg";
+import arrowwhite from "../../assets/icons/arrowwhite.svg";
 
 function Dashboardscreen() {
   return (
@@ -31,7 +35,9 @@ function Dashboardscreen() {
               <p>From colors, cards, typogaphy to complex elements,</p>
               <p>you will find the full documentataion.</p>
 
+              <p className='readmore'>Read more <img src={arrowicon} className='arrowicon' alt="Arrow Icon" /></p>
             </div>
+
             <div className='cardOne-img'>
               <img src={chakraimg} alt="chakra-image" />
             </div>
@@ -42,6 +48,7 @@ function Dashboardscreen() {
               <p>Wealth creation is an evolutionarily recent positive-sum game.
               </p>
               <p>It is all about who take the opportunity first.</p>
+              <p className='readmore'>Read more <img src={arrowwhite} className='arrowicon' alt="Arrow Icon" /></p>
 
             </div>
           </div>
@@ -56,15 +63,17 @@ function Dashboardscreen() {
               </div>
               <div className="graph-card">
 
+                {small_cards_data.map((data, ind) => {
+                  return <DashboardSmallCards iconsrc={data.imgsrc} iconname={data.name} value={data.number} progresspercentage={data.progress} />
+                })}
+
               </div>
             </div>
-            <div className="text" ></div>
-            <div className="graph-container-cards" >
-
-            </div>
-
           </div>
-          <div className="analytics-cards-two-cards secondCard"> <SalesChart /></div>
+
+          <div className="analytics-cards-two-cards secondCard">
+            <div className='graph-head'><p className='graph-title'>Sales overview</p><p><span>(+5) more </span> in 2021</p></div>
+            <SalesChart /></div>
         </div>
         <div className="row">Row 4</div>
       </div>
