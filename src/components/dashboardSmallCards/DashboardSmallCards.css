@@ -1,0 +1,28 @@
+
+.graph-container-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:4px;
+    margin-top: 20px;
+
+}
+
+.cards-item{
+width: 100px;
+height: 64px;
+}
+.cards-icon-conainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cards-item-num{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2D3748;
+    margin-top: 4px;
+}
+
