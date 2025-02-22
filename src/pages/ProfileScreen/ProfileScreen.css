@@ -1,0 +1,27 @@
+.profileScreen-container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 340px auto;
+    width: 100%;
+    height: 100vh;
+}
+.apptoolbar-profileScreen{
+    position: relative;
+    top:0px;
+}
+.apptoolbar-profileScreen{
+    grid-row: 1;
+    grid-column: 2;
+    z-index: 30;
+}
+.profileScreen-bg{
+    width: 100%;
+    height: 280px;
+    grid-row: 1;
+    grid-column: 2;
+}
+.profileScreen-content{
+    grid-column: 2;
+    grid-row:2 ;
+    background-color: aquamarine;
+}

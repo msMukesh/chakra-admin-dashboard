@@ -6,6 +6,7 @@ import Footer from "./components/Footermenu/Footer.jsx"
 import Navbar from "./components/navbar/Navbar.jsx";
 import Error from "./pages/Error.jsx";
 import Dashboardscreen from "./pages/dashboardScreen/Dashboardscreen.jsx";
+import ProfileScreen from "./pages/ProfileScreen/ProfileScreen.jsx";
 import "./App.css";
 //
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Signup />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/dashboardscreen" element={<Dashboardscreen />} />
+            <Route path="/profilescreen" element={<ProfileScreen />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </div>

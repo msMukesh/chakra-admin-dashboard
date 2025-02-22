@@ -1,7 +1,6 @@
 import React from 'react';
 import Sidepanel from '../../components/sidepannel/Sidepanel';
 import Apptoolbar from '../../components/apptoolbar/Apptoolbar.jsx';
-import "./Dashboardscreen.css";
 import AnalyticsCard from '../../components/analyticsCards/AnalyticsCard.jsx';
 import analytics_statistics from '../../data/dashboardAnalyticsStat.js';
 import chakraimg from "../../assets/images/chakra-image.png";
@@ -11,10 +10,12 @@ import DashboardSmallCards from '../../components/dashboardSmallCards/DashboardS
 import small_cards_data from '../../data/smallCardsData.js';
 import arrowicon from "../../assets/icons/arrow.svg";
 import arrowwhite from "../../assets/icons/arrowwhite.svg";
+import "./Dashboardscreen.css";
 
 function Dashboardscreen() {
   return (
     <div className='dashboard-container'>
+      
       <div className='sidepanel'><Sidepanel /></div>
       <div className='apptoolbar'><Apptoolbar /></div>
       <div className='dashboard-content'>
