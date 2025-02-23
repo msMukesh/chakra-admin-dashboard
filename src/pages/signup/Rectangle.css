@@ -1,14 +1,19 @@
 .rectangle {
-    width: 75px;
-    height: 75px;
-    top: 395.5px;
-    left: 832.5px;
-    border-radius: 15px;
-    border: 1px solid #E2E8F0;
-    background-color: rgb(255, 255, 255); /* Optional */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 75px;
+  height: 75px;
+  top: 395.5px;
+  left: 832.5px;
+  border-radius: 15px;
+  border: 1px solid #e2e8f0;
+  background-color: rgb(255, 255, 255); /* Optional */
+  transition: background-color 0.3s ease;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle:hover{
+  background-color:rgb(233, 233, 233);
+  color: white;
+}

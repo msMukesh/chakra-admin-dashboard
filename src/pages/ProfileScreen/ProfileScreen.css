@@ -1,27 +1,199 @@
-.profileScreen-container{
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 340px auto;
-    width: 100%;
-    height: 100vh;
+.profileScreen-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 340px 440px auto;
+  width: 100%;
+  min-height:95vh;
+  height: 100%;
+  background-color:  #f8f9fa;
+
 }
-.apptoolbar-profileScreen{
-    position: relative;
-    top:0px;
+.apptoolbar-profileScreen {
+  position: relative;
+  top: 0px;
 }
-.apptoolbar-profileScreen{
-    grid-row: 1;
-    grid-column: 2;
-    z-index: 30;
+.apptoolbar-profileScreen {
+  grid-row: 1;
+  grid-column: 2;
+  height: 60px;
+  color: transparent;
 }
-.profileScreen-bg{
-    width: 100%;
-    height: 280px;
-    grid-row: 1;
-    grid-column: 2;
+.profileScreen-bg {
+  width: 100%;
+  height: 280px;
+  grid-row: 1;
+  grid-column: 2;
+  
 }
-.profileScreen-content{
-    grid-column: 2;
-    grid-row:2 ;
-    background-color: aquamarine;
+.profileScreen-content {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #f8f9fa;
+}
+
+.profile-element {
+  grid-column: 2;
+  grid-row: 1;
+  width: 96%;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 50%
+  );
+
+  border-radius: 15px;
+  border: 1.2px solid #ffffff;
+  margin-bottom: 8px;
+  position: relative;
+  justify-self: center; /* Center it horizontally */
+  align-self: end; /* Ensures it aligns at the bottom of its grid row */
+  display: flex;
+  align-items: center;
+}
+.editicon {
+  position: absolute;
+  left: 76px;
+  bottom: 6px;
+  color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6); /* X-offset, Y-offset, Blur-radius, Shadow color */
+  border-radius: 15px;
+}
+.profilepic {
+  border-radius: 12px;
+  width: 80px;
+  height: 80px;
+  margin-left: 12px;
+}
+
+.Name-box {
+  margin-left: 20px;
+}
+
+.fullname {
+  color: #2d3748;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.email {
+  color: #718096;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.icons-container {
+  margin-left: auto;
+  margin-right: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-cards {
+  grid-column: 2;
+  grid-row:2/3; 
+  background-color:#F8F9FA;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; /* Ensures equal spacing */
+  padding: 10px;
+}
+.card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  min-width: 180px;
+  max-width: 500px; 
+  height: 400.5px;
+  width: 500px;
+  text-align: center;
+  margin: 10px;
+  padding:12px;
+  /* border:3px solid #2D3748; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Ensures equal spacing */
+  padding: 10px;
+}
+.platform-settings{
+  text-align: left;
+  align-items: flex-start;
+
+  padding-left: 25px;
+}
+
+.list ul{
+  list-style: none;
+}
+.text{
+  font-size: 18px;
+  font-weight: 700;
+  color:#2D3748;
+  text-align: left;
+}
+.list h4{ 
+  margin-top: 18px;
+
+  font-size: 10px;
+  font-weight: 700;
+  color:#A0AEC0;
+}
+.list ul li {
+  margin-top:18px ;
+ /* background-color: #718096; */
+ display: flex;
+ align-items: center;
+ gap:12px;
+}
+.list span{
+  font-size: 12px;
+  font-weight: 400;
+  color:#A0AEC0;
+}
+
+
+.profile-information{
+  justify-content: flex-start;
+  padding-left: 25px;
+  align-items: flex-start;
+}
+
+.profile-text h4{
+  margin-top: 20px;
+}
+.font-format{
+  margin-top:16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+  color:#A0AEC0;
+  line-height: 1.6;
+}
+
+.custom-hr-profile {
+  width: 98%; /* Makes it responsive inside sidepanel */
+  height: 1px;
+  border: none;
+  align-self: center;
+  background: linear-gradient(to right, #E0E1E2 0%, #E0E1E2 15.63%, #E0E1E2 100%);
+  margin: 24px 0; /* Adds spacing */
+}
+
+.list-profile{
+  margin-bottom: 2px;
+}
+.list-profile ul li label{
+  font-size: 12px;
+  font-weight: 700;
+  color:#718096;
+  line-height: 1.6;
+
+}
+
+.list-profile ul li label span{
+  margin-left:12px;
 }

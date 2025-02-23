@@ -22,8 +22,10 @@ function SignIn() {
 
               <label htmlFor="password">Password:</label>
               <input type="password" id="password" placeholder="your password" />
+
               <div className="toggle-div">
-                <Togglebutton />
+                <Togglebutton />      
+                <span className='toggletext-signin '>Remember me</span>
               </div>
 
               <button type="submit" className="signinbutton">Sign In</button>

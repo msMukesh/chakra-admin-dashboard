@@ -128,3 +128,12 @@
 .signup-text a:hover {
     text-decoration: underline;
 }
+
+.toggletext-signin{
+    position:relative;
+    margin-right: auto;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+  }

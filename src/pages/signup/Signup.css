@@ -11,141 +11,158 @@ body {
   min-height: 100vh;
 }
 
-.signup-container{
+.signup-container {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* Vertically centers content */
-  justify-content: center;  /* Horizontally centers content */
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
   width: 100%;
   height: 100%;
 }
-  .signup-bg{
-    width: 100%;
-    height: 45vh;
-    background-image: url("../../assets/images/signupBackground.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   }
+.signup-bg {
+  width: 100%;
+  height: 45vh;
+  background-image: url("../../assets/images/signupBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-   .welcome{
-    position: absolute;
-    top:100px;
-    color:rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-   }
-.welcome h3{
+.welcome {
+  position: absolute;
+  top: 100px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.welcome h3 {
   font-weight: 700;
   font-size: 28px;
-
 }
-   .welcome div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-   }
-   .welcome div p{
-    font-size: 13px;
-    font-weight: 400;
-    display: block;
-
-   }
-
-   .addUser {
-    display: block;
-    min-width: 480px;
-    max-width: 600px;
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: -120px; /* Reserves space for other elements above */
-    margin-bottom: 18px; /* Spacing between the form and footer */
+.welcome div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.welcome div p {
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
 }
 
-  .head{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:8px;
-   }
+.addUser {
+  display: block;
+  min-width: 480px;
+  max-width: 600px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: -120px; /* Reserves space for other elements above */
+  margin-bottom: 18px; /* Spacing between the form and footer */
+}
 
-  .RectangleDiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap:15px;
-  }
-  /* Making the form fields take full width */
-  .inputGroup {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .inputGroup label {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 14px;
-  }
-  
-  .inputGroup input {
-    margin-top: 5px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    font-size: 16px;
-  }
-  
-  /* Styling the Sign Up button */
-  .signupBtn {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #4FD1C5;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .signupBtn:hover {
-    background-color: #32a89c;
-  }
-  
-  /* Centering the login link */
-  .signincontainer {
-    margin-top: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .signincontainer p{
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-  }
-  
-  .signinLink {
-    font-weight: 700;
-    font-size: 14px;
-    margin-left: 4px;
-    color:#4FD1C5;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .signinLink:hover {
-    text-decoration: underline;
-  }
-  
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.head h3 {
+  margin-bottom: 18px;
+}
+.head p {
+  font-style: 18px;
+  font-weight: 700;
+  color: #a0aec0;
+  margin-top: 18px;
+}
+.RectangleDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+}
+/* Making the form fields take full width */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.inputGroup input {
+  margin-top: 5px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+/* Styling the Sign Up button */
+.signupBtn {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #4fd1c5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signupBtn:hover {
+  background-color: #32a89c;
+}
+
+/* Centering the login link */
+.signincontainer {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.signincontainer p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.signinLink {
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 4px;
+  color: #4fd1c5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signinLink:hover {
+  text-decoration: underline;
+}
+.toggle-div{
+  display: flex;
+  align-items: center;
+}
+.toggletext-signup{
+  position:relative;
+  margin-right: auto;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 8px;
+}

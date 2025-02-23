@@ -6,7 +6,7 @@ import signinperson from "../../assets/apptoolbar/persongrey.svg";
 import searchicon from "../../assets/apptoolbar/searchicon.svg";
 import { Link } from "react-router-dom";
 
-function Apptoolbar() {
+function Apptoolbar({toolbar_backgoundcolor}) {
   return (
     <div className='toolbar-container'>
       <div className='search'>
@@ -18,7 +18,7 @@ function Apptoolbar() {
 
     <div className='toolbar-signin-conainer'>
     <img className="tool-element" src={signinperson} alt="signin icon" />
-        <span className='signin-txt'><Link to="/signin" className="signinlink">Sign In </Link></span>
+    <span className='signin-txt'><Link to="/signin" className="signinlink">Sign In </Link></span>
     </div>
 
     <img className="tool-element" src={notificationicon} alt="notification icon" />

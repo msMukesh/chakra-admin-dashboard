@@ -10,7 +10,6 @@ import signinfolder from "../../assets/sidebar/signinfolder.svg";
 import rocket from "../../assets/sidebar/rocket.svg";
 import needhelp from "../../assets/sidebar/questionmark.svg";
 import Iconrec from "../iconRect/Iconrect.jsx";
-
 function Sidepanel() {
   return (
     <div className='sidepanel-container'>

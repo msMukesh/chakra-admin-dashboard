@@ -47,6 +47,8 @@ function Signup() {
           
       <div className="toggle-div">
           <Togglebutton/>
+          <span className='toggletext-signup '>Remember me</span>
+
       </div>
 
           <button type="submit" className="signupBtn">Sign Up</button>

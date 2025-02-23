@@ -8,7 +8,6 @@ function Togglebutton() {
         <input type="checkbox" />
         <span className="slider round"></span>
       </label>
-      <span className='toggletext '>Remember me</span>
     </div>
   );
 }
