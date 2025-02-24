@@ -73,7 +73,7 @@ function Sidepanel() {
           <p className='needhelp-text2'>Please check our docs</p>
         </div>
 
-        <button className="custom-button">DOCUMENTATION</button>
+        <button className="custom-button-sidepanel">DOCUMENTATION</button>
 
       </div>
     </div>
@@ -81,3 +81,4 @@ function Sidepanel() {
 }
 
 export default Sidepanel;
+

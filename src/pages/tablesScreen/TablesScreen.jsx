@@ -145,7 +145,8 @@ function TablesScreen() {
                 <Apptoolbar />
             </div>
             <div className="tables-screen-content">
-                <CustomButton text="Add user" color="#4FD1C5" onClick={() => { setflag(!flag) }} />
+                <CustomButton text="Add user" color="#4FD1C5" btnwidth="90px"
+                    btnheight="35px" onClick={() => { setflag(!flag) }} />
 
 
 
