@@ -7,7 +7,7 @@ import Navbar from "./components/navbar/Navbar.jsx";
 import Error from "./pages/Error.jsx";
 import Dashboardscreen from "./pages/dashboardScreen/Dashboardscreen.jsx";
 import ProfileScreen from "./pages/ProfileScreen/ProfileScreen.jsx";
-import TablesScreen from "./pages/TablesScreen/TablesScreen.jsx";
+import TablesScreen from "./pages/tablesScreen/TablesScreen.jsx";
 import "./App.css";
 
 
