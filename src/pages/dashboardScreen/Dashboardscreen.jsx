@@ -22,14 +22,14 @@ function Dashboardscreen() {
         <div className=" analytics-cards row">
 
           {
-            analytics_statistics.map((data) => {
-              return <div className="analytics-card"> <AnalyticsCard text={data.text} amount={data.amount} percentage={data.percentage} iconsrc={data.src} /> </div>
+            analytics_statistics.map((data,index) => {
+              return <div className="analytics-card" key={index}> <AnalyticsCard  text={data.text} amount={data.amount} percentage={data.percentage} iconsrc={data.src} /> </div>
             })
           }
 
         </div>
         <div className="bigCards">
-          <div className="card cardOne">
+          <div className="card-dashboard cardOne">
             <div className='cardOne-text'>
               <p>Built by developers</p>
               <p>Purity UI Dashboard</p>
@@ -43,7 +43,7 @@ function Dashboardscreen() {
               <img src={chakraimg} alt="chakra-image" />
             </div>
           </div>
-          <div className=" card cardTwo">
+          <div className=" card-dashboard cardTwo">
             <div className="cardTwoBgImg">
               <p className='cardTwoBgImg-heading'> Work with the Rockets</p>
               <p>Wealth creation is an evolutionarily recent positive-sum game.
@@ -65,7 +65,7 @@ function Dashboardscreen() {
               <div className="graph-card">
 
                 {small_cards_data.map((data, ind) => {
-                  return <DashboardSmallCards iconsrc={data.imgsrc} iconname={data.name} value={data.number} progresspercentage={data.progress} />
+                  return <DashboardSmallCards key={ind} iconsrc={data.imgsrc} iconname={data.name} value={data.number} progresspercentage={data.progress} />
                 })}
 
               </div>

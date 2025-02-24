@@ -10,69 +10,72 @@ import signinfolder from "../../assets/sidebar/signinfolder.svg";
 import rocket from "../../assets/sidebar/rocket.svg";
 import needhelp from "../../assets/sidebar/questionmark.svg";
 import Iconrec from "../iconRect/Iconrect.jsx";
+import {Link} from "react-router-dom";
+
 function Sidepanel() {
   return (
     <div className='sidepanel-container'>
-        <div className='nav-head'>
-            <img src={creativetimlogoblue} alt="Logo" />
-            <span>PURITY UI DASHBOARD</span>
-        </div>
-        <hr className="custom-hr" />
-<div className='menu'>
-<div className='dashboard-home'>
-        <Iconrec imgsrc={dashboardhouse} recbgcolor="#4FD1C5"/>
-        <span>Dashboard</span>
+      <div className='nav-head'>
+        <img src={creativetimlogoblue} alt="Logo" />
+        <span>PURITY UI DASHBOARD</span>
+      </div>
+      <hr className="custom-hr" />
+      <div className='menu'>
+        <div className='dashboard-home link-style'>
+          <Iconrec imgsrc={dashboardhouse} recbgcolor="#4FD1C5" />
+          <span><Link to="/dashboardscreen" className="dashboardlink">Dashboard</Link></span>
         </div>
 
         <div className='icon-conainer tables'>
-        <Iconrec imgsrc={tables} recbgcolor="#FFFFFF"/>
-        <span className='names'>Tables</span>
+          <Iconrec imgsrc={tables} recbgcolor="#FFFFFF" />
+          <span className='names'><Link to="/tablesscreen" className='dashboardlink'>Tables</Link>
+            </span>
         </div>
 
         <div className='icon-conainer '>
-        <Iconrec imgsrc={billingimg} recbgcolor="#FFFFFF"/>
-        <span className='names'>Billing</span>
+          <Iconrec imgsrc={billingimg} recbgcolor="#FFFFFF" />
+          <span className='names'>Billing</span>
         </div>
 
         <div className='icon-conainer '>
-        <Iconrec imgsrc={toolsrtl} recbgcolor="#FFFFFF"/>
-        <span className='names'>RTL</span>
+          <Iconrec imgsrc={toolsrtl} recbgcolor="#FFFFFF" />
+          <span className='names'>RTL</span>
         </div>
 
         <div className='icon-conainer '>
-        <p className='textaccpage'> ACCOUNTS PAGES</p>
+          <p className='textaccpage'> ACCOUNTS PAGES</p>
         </div>
 
         <div className='icon-conainer '>
-        <Iconrec imgsrc={profile} recbgcolor="#FFFFFF"/>
-        <span className='names'>Profile</span>
+          <Iconrec imgsrc={profile} recbgcolor="#FFFFFF" />
+          <span className='names'><Link to="/profilescreen" className='link-style' >Profile</Link></span>
         </div>
 
         <div className='icon-conainer '>
-        <Iconrec imgsrc={signinfolder} recbgcolor="#FFFFFF"/>
-        <span className='names'>Sign In</span>
+          <Iconrec imgsrc={signinfolder} recbgcolor="#FFFFFF" />
+          <span className='names'>Sign In</span>
         </div>
 
         <div className='icon-conainer '>
-        <Iconrec imgsrc={rocket} recbgcolor="#FFFFFF"/>
-        <span className='names'>Sign Up</span>
+          <Iconrec imgsrc={rocket} recbgcolor="#FFFFFF" />
+          <span className='names'>Sign Up</span>
         </div>
-</div>
-      
+      </div>
 
-        <div className='needhelp-container'>
+
+      <div className='needhelp-container'>
         <div className='needhelp-icon '>
-        <Iconrec imgsrc={needhelp} recbgcolor="#FFFFFF" imgheight="20px" imgwidth="20px" containerheight="35px" containerwidth="35px"/>
+          <Iconrec imgsrc={needhelp} recbgcolor="#FFFFFF" imgheight="20px" imgwidth="20px" containerheight="35px" containerwidth="35px" />
         </div>
 
-<div className='needhelp-text-container'>
-  <p className='needhelp-text1'>Need help?</p>
-  <p className='needhelp-text2'>Please check our docs</p>
-</div>
+        <div className='needhelp-text-container'>
+          <p className='needhelp-text1'>Need help?</p>
+          <p className='needhelp-text2'>Please check our docs</p>
+        </div>
 
-<button className="custom-button">DOCUMENTATION</button>
+        <button className="custom-button">DOCUMENTATION</button>
 
-          </div>
+      </div>
     </div>
   );
 }

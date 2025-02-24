@@ -1,0 +1,19 @@
+.custom-button {
+    width: 65px;
+    height: 25px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+
+.custom-button:hover {
+    opacity: 0.9;
+}
+
+.custom-button:active {
+    opacity: 0.8;
+}

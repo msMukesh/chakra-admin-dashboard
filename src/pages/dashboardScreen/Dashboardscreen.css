@@ -59,9 +59,9 @@
     padding: 8px;
 }
 
-.card {
+.card-dashboard {
     border-radius: 15px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: 260px;
     padding: 4px;
 }

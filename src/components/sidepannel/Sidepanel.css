@@ -140,3 +140,11 @@ line-height: 19.6px;
 .custom-button:hover {
     background-color: #f0f0f0;
 }
+
+.dashboardlink {
+text-decoration: none;
+color:inherit;}
+
+.link-style{
+    text-decoration: none;
+    color:inherit;}
