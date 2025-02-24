@@ -206,27 +206,11 @@ function TablesScreen() {
 
                             <button className="submitbtn" type="submit" style={{ backgroundColor: edit ? "#4FD1C5" : "" }}> {edit ? "Update" : "Submit"}</button>
                         </form>
-
-
                     </div>
 
-
-
                 }
-
-
-
-
-
-
-
-
-
-
                 <div className="first-card">
                     <h3 className="heading">Authors Table</h3>
-                    <h4>AUTHOR</h4>
-
                     <table>
                         <thead>
                             <tr>
